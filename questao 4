@@ -4,7 +4,7 @@ int main() {
     int opcao;
     float num1, num2, resultado;
 
-    printf("=== calculadora simples ===\n");
+    printf("=== calculadora ===\n");
     printf("Escolha uma operação:\n");
     printf("1 - Adição\n");
     printf("2 - Subtração\n");
