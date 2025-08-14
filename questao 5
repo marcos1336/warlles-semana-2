@@ -1,18 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    int num;
+    int nume;
 
     printf("Digite um número inteiro: ");
-    scanf("%d", &num);
+    scanf("%d", &nume);
 
-    int div2 = (num % 2 == 0);
-    int div3 = (num % 3 == 0);
+    int div2 = (nume % 2 == 0);
+    int div3 = (nume % 3 == 0);
 
-    if ((div2 != div3) && (div2 || div3)) {
-        printf("O número %d é divisível por 2 ou por 3, mas não simultaneamente pelos dois.\n", num);
+    if (div2 && div3) {
+        printf("O número %d é divisível por 2 e por 3.\n", nume);
+    } else if (div2 && !div3) {
+        printf("O número %d é divisível por 2, mas não por 3.\n", nume);
+    } else if (!div2 && div3) {
+        printf("O número %d é divisível por 3, mas não por 2.\n", nume);
     } else {
-        printf("O número %d não satisfaz a condição.\n", num);
+        printf("O número %d não é divisível nem por 2 nem por 3.\n", nume);
     }
 
     return 0;
