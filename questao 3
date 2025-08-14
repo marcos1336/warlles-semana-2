@@ -15,7 +15,7 @@ int main() {
     scanf("%ld", &numeroConta); 
 
     
-    printf("\n--- Dados do Depósito ---\n");
+    printf("\n- Dados do Depósito -\n");
     printf("Idade: %hd anos\n", idade);
     printf("Montante a depositar: %d\n", deposito);
     printf("Número da conta: %ld\n", numeroConta);
