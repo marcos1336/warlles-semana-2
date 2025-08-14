@@ -12,7 +12,7 @@ int main() {
     if ((div2 != div3) && (div2 || div3)) {
         printf("O número %d é divisível por 2 ou por 3, mas não simultaneamente pelos dois.\n", num);
     } else {
-        printf("O número %d NÃO satisfaz a condição.\n", num);
+        printf("O número %d não satisfaz a condição.\n", num);
     }
 
     return 0;
