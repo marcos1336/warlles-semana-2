@@ -5,16 +5,27 @@ int main() {
     int deposito;
     long numeroConta;
 
-
     printf("Digite sua idade: ");
     scanf("%hd", &idade);  
+    if (idade < 0) {
+        printf("Erro: a idade não pode ser negativa.\n");
+        return 1;
+    }
+
     printf("Digite o montante a depositar: ");
     scanf("%d", &deposito);  
+    if (deposito < 0) {
+        printf("Erro: o valor do depósito não pode ser negativo.\n");
+        return 1;
+    }
 
     printf("Digite o número da conta: ");
     scanf("%ld", &numeroConta); 
+    if (numeroConta < 0) {
+        printf("Erro: o número da conta não pode ser negativo.\n");
+        return 1;
+    }
 
-    
     printf("\n- Dados do Depósito -\n");
     printf("Idade: %hd anos\n", idade);
     printf("Montante a depositar: %d\n", deposito);
